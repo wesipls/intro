@@ -103,17 +103,69 @@
             <p>
                 If you're here for my CV, click
                 <a href="https://valkama.kim/cv">Here</a>.
-                <pre>
+            </p>
+            <pre id="dancer" style="line-height: 1; font-size: 18px"></pre>
+
+            <script>
+                const frames = [
+                    `
             .--.
          .-(    )-.
-        /  o  o    \
+        / o  o     \\
+       |    ^       |
+       |            |
+        \\  __      /
+         '-.____.-'
+            \\|
+             |\\
+            / \\
+`,
+                    `
+             .--.
+          .-(    )-.
+         /    o  o  \\
+        |       ^    |
+        |            |
+         \\     __   /
+          '-.____.-'
+             |/
+            /|
+            / \\
+`,
+                    `
+            .--.
+         .-(    )-.
+        /  o  o    \\
        |     ^      |
        |            |
-        \  \__/    /
+        \\   __     /
          '-.____.-'
+           \\|/
+            |
+           / \\
+`,
+                    `
+           .--.
+        .-(    )-.
+       /    o  o  \\
+      |       ^    |
+      |            |
+       \\     __   /
+        '-.____.-'
+            _|_
+             |
+            / \\
+`,
+                ];
 
-                </pre>
-            </p>
+                let frame = 0;
+
+                setInterval(() => {
+                    document.getElementById("dancer").textContent =
+                        frames[frame];
+                    frame = (frame + 1) % frames.length;
+                }, 350);
+            </script>
         </main>
     </body>
 </html>
