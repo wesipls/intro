@@ -104,7 +104,10 @@
                 If you're here for my CV, click
                 <a href="https://valkama.kim/cv">Here</a>.
             </p>
+            
             <pre id="dancer" style="line-height: 1; font-size: 18px"></pre>
+            <p id="visitor">dancing man appreciates visitor</p>
+
 
             <script>
                 const frames = [
@@ -165,6 +168,14 @@
                         frames[frame];
                     frame = (frame + 1) % frames.length;
                 }, 350);
+
+                fetch("https://ipapi.co/json/")
+                    .then((r) => r.json())
+                    .then((geo) => {
+                        document.getElementById("visitor").textContent =
+                            `dancing man appreciates visitor from ${geo.country_name}`;
+                    })
+                    .catch(() => {});
             </script>
         </main>
     </body>
