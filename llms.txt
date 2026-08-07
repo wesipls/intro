@@ -1,0 +1,16 @@
+#Kim Valkama
+
+##Profile
+Infrastructure & Platform Engineer with 13+ years of experience owning and operating production systems. I design Linux-based infrastructure with a focus on reliability, cost-efficiency, and developer productivity—favoring pragmatic solutions over unnecessary complexity.
+
+## Open Source
+My open source projects are hosted on GitHub.
+https://github.com/wesipls
+
+##Links
+https://linkedin.com/in/kim-valkama
+https://valkama.kim/cv
+
+##Contact
+tel: +358445959906
+mail: hello@valkama.kim
